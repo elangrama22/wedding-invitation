@@ -1,4 +1,3 @@
-/* Reset */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 * {
@@ -722,9 +721,10 @@ section {
     font-size: 14px;
     cursor: pointer;
     margin-top: 20px;
+    margin-left: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-image: url('img/gift.png');
     background-repeat: no-repeat;
     background-position: 16px center;
@@ -732,6 +732,8 @@ section {
     padding-left: 40px;
     transition: 500ms;
     border-radius: 5px;
+    width: 100%; 
+    max-width: 250px; 
 }
 
 .wedding-gift button:hover {
@@ -832,10 +834,12 @@ form {
 
 form input, form textarea, form select {
     width: 100%;
+    max-width: 600px;
+    min-width: 250px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    min-width: 450px;
+    box-sizing: border-box;
 }
 
 .comments {
